@@ -7,14 +7,13 @@ import nltk
 from nltk.corpus import stopwords
 from plotly import graph_objects as go
 import os
-# from dotenv import load_dotenv
 from datetime import datetime
 from collections import Counter
 import re
 nltk.download('stopwords')
 
-
-st.title('🎈 Dashboard Beauty Product')
+st.title('💄Dashboard Beauty Product')
+st.markdown("##")
 
 st.write('This is interative dashboard beauty product')
 df_product = pd.read_csv('https://raw.githubusercontent.com/desims/Chat-AI/refs/heads/main/data/data3.csv', delimiter=';')
