@@ -11,6 +11,8 @@ import os
 from datetime import datetime
 from collections import Counter
 import re
+nltk.download('stopwords')
+
 
 st.title('🎈 Dashboard Beauty Product')
 
