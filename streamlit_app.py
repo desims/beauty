@@ -46,9 +46,8 @@ end_date = st.sidebar.date_input("End Date", value=datetime.now())
 
 tab1, tab2, tab3, tab4 = st.tabs(["Message Analitics","Feedback","Acquisition Funnel","Dataset"])
 with tab1:
-    # chat_df = get_messages()
     chat_df= pd.read_csv('https://raw.githubusercontent.com/desims/Chat-AI/refs/heads/main/data/data2.csv',delimiter=';')
-    # chat_df
+    
     # Convert 'date' column to datetime format
     chat_df['date'] = pd.to_datetime(chat_df['date'], format='%d/%m/%Y').dt.date
     filtered_users = chat_df[chat_df['from'] != 'bot']['from']
@@ -156,23 +155,19 @@ with tab1:
 
     # product_names = df_product['Nama Produk']
     product_names = df_product['Nama Produk'].str.lower()
-    # print(product_names)
+  
     # product_names_list = [name.lower() for name in product_names]
     product_names_list = product_names.tolist()
 
     # st.dataframe(nama_product)
     top_products = count_product_occurrences(product_names_list, filtered_text)
+    
     # Mengurutkan produk berdasarkan kemunculan terbanyak
     top_products = dict(sorted(top_products.items(), key=lambda item: item[1], reverse=True))
     top10_products = dict(list(top_products.items())[:10])
 
-    # print("Filtered Text:", filtered_text)
-    # print("Product Names List:", product_names_list)
-    # print("Top Products:", top_products)
-
     # Buat DataFrame dari dictionary
     df_top10_products = pd.DataFrame(list(top10_products.items()), columns=['Nama Produk', 'Jumlah Kemunculan'])
-    # print(df_top10_products)
 
     # Tampilkan bar chart
     st.markdown("##")
@@ -189,12 +184,6 @@ with tab1:
     st.subheader("Key Topics:")
     topics_df = pd.DataFrame(key_topics_2, columns=["Topic", "Frequency"])
     st.dataframe(topics_df,use_container_width=True)
-
-    # elif st.session_state["authentication_status"] is False:
-    #     st.error('Username/password is incorrect')
-    # elif st.session_state["authentication_status"] is None:
-    #     st.warning('Please enter your username and password')
-
 
 
 
