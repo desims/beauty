@@ -1,16 +1,16 @@
 import streamlit as st
 import pandas as pd
-# import plotly.express as px
-# from wordcloud import WordCloud
-# import matplotlib.pyplot as plt
-# import nltk
-# from nltk.corpus import stopwords
-# from plotly import graph_objects as go
-# import os
+import plotly.express as px
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
+import nltk
+from nltk.corpus import stopwords
+from plotly import graph_objects as go
+import os
 # from dotenv import load_dotenv
 from datetime import datetime
-# from collections import Counter
-# import re
+from collections import Counter
+import re
 
 st.title('🎈 Dashboard Beauty Product')
 
