@@ -17,6 +17,7 @@ nltk.download('stopwords')
 st.title('🎈 Dashboard Beauty Product')
 
 st.write('This is interative dashboard beauty product')
+df_product = pd.read_csv('https://raw.githubusercontent.com/desims/Chat-AI/refs/heads/main/data/data3.csv', delimiter=';')
 df = pd.read_csv('https://raw.githubusercontent.com/desims/Chat-AI/refs/heads/main/data/data2.csv', delimiter=';')
 df
 
