@@ -36,7 +36,7 @@ end_date = st.sidebar.date_input("End Date", value=datetime.now())
 tab1, tab2, tab3, tab4 = st.tabs(["Message Analitics","Feedback","Acquisition Funnel","Dataset"])
 with tab1:
     # chat_df = get_messages()
-    chat_df= pd.read_csv('data/data2.csv',delimiter=';')
+    chat_df= pd.read_csv('https://raw.githubusercontent.com/desims/Chat-AI/refs/heads/main/data/data3.csv',delimiter=';')
     # Convert 'date' column to datetime format
     chat_df['date'] = pd.to_datetime(chat_df['date'], format='%d/%m/%Y').dt.date
     filtered_users = chat_df[chat_df['from'] != 'bot']['from']
