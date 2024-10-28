@@ -37,7 +37,7 @@ def remove_product_words(text, product_names):
     return cleaned_text
 
 #side bar
-st.sidebar.image("buah.png",caption="Developed and Maintaned by: helo@buah2an.id")
+st.sidebar.image("buah.png",caption="Developed and Maintaned by: desimayasarisitompul@gmail.com")
 
 ## Filter by Date All Data
 st.sidebar.header("Please filter")
