@@ -1,6 +1,7 @@
 # 💄 Dashboard Beauty Product
 
 This is a interactive dashboard for beauty product 
+This dashboard visualizes AI-generated data showcasing user interactions with an AI chatbot designed to answer queries related to buah2an beauty products. Inspired by a previous professional project, the dashboard delves into user behavior through metrics such as message frequency, key topic identification, and product-related trends. It serves as a tool for discovering insights and understanding how users engage with the chatbot regarding beauty product information.
 
 ## Demo App
 
