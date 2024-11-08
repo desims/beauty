@@ -11,13 +11,13 @@ This dashboard visualizes AI-generated data showcasing user interactions with an
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/app-starter-kit?quickstart=1)
 
-## Section Heading
+## Insight
 
-This is filler text, please replace this with text for this section.
+This project visualizes AI-generated data on user interactions with a chatbot that assists with beauty product inquiries. 
+It includes metrics for user engagement, trend analysis, and topic discovery
 
-## Further Reading
+## Feature Detail
 
-This is filler text, please replace this with a explanatory text about further relevant resources for this repo
-- Resource 1
-- Resource 2
-- Resource 3
+Dive into detailed insights:
+1. Explore user interactions through Message Metrics.
+2. Discover trends in text analytics with Word Clouds, top product insights, and key topic identification.
